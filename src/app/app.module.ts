@@ -30,6 +30,8 @@ import { ListenerService } from './servicios/listener.service';
 import { Error403Component } from './error403/error403.component';
 import { PeliculaComponent } from './pelicula/pelicula.component';
 import { Error404Component } from './error404/error404.component';
+import { DataGenerosService } from './servicios/dataGeneros.service';
+import { DataPeliculasService } from './servicios/dataPeliculas.service';
 
 
 
@@ -68,7 +70,7 @@ import { Error404Component } from './error404/error404.component';
     MatButtonToggleModule
   ],
 
-  providers: [DataUsuariosService, CookieService, ListenerService],
+  providers: [DataUsuariosService, CookieService, ListenerService, DataGenerosService, DataPeliculasService],
 
   bootstrap: [AppComponent]
 })
