@@ -1,0 +1,17 @@
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 77%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+/* mat-icon {
+    color: #f44336;
+    transform: scale(8);
+} */

@@ -1,0 +1,26 @@
+<div class="contenedor-principal" *ngIf="active else elseBlock">
+
+    <div class="contenedor-generos">
+        <mat-button-toggle-group>
+            <mat-button-toggle color="primary" (click)="clasificarPeliculas(0)" checked="true">
+                Todas
+            </mat-button-toggle>
+            <mat-button-toggle color="primary" *ngFor="let genero of generos" (click)="clasificarPeliculas(genero.id)">
+                {{genero.nombre}}
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+
+    <!-- <button mat-raised-button color="primary" (click)="irAgregar()">AGREGAR PELICULA</button>      -->
+    <div *ngIf="peliculas.length !== 0 else elseBlock2" class="contenedor-peliculas">
+        <app-pelicula *ngFor="let pelicula of peliculas" [pelicula]="pelicula"></app-pelicula>
+    </div>
+    <ng-template #elseBlock2>
+        <h1>No hay peliculas de este genero. Pronto subiremos más!</h1>
+    </ng-template>
+
+</div>
+
+<ng-template #elseBlock>
+    <app-error403></app-error403>
+</ng-template>

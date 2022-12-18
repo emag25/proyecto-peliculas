@@ -1,0 +1,21 @@
+.mat-toolbar-single-row {
+    justify-content: space-between
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+/* 
+mat-sidenav-container {
+    height: 100%;
+}
+
+mat-side-nav {
+    width: 550px;
+} */

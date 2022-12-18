@@ -1,0 +1,16 @@
+<div class="contenedor-principal"  *ngIf="active else elseBlock">
+  <p>Nombre: </p>
+  <p>Nombre: </p>
+  <p>Nombre: </p>
+  <p>Nombre: </p>
+  <p>Nombre: </p>
+  <p>Nombre: </p>
+  <p>Nombre: </p>
+
+  <h2>Mis pedidos</h2>
+
+</div>
+
+<ng-template #elseBlock>
+  <app-error403></app-error403>
+</ng-template>
